@@ -1,0 +1,10 @@
+version: '2'
+
+services:
+       web:
+         build:
+            context: /home/posi/docker_test
+            dockerfile: Dockerfile
+         container_name: js_app
+         ports:
+          - "8080:80"
